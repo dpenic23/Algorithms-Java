@@ -30,6 +30,7 @@ public class RemoveDuplicates {
 		System.out.println(list);
 
 		removeDuplicates(list);
+
 		System.out.println(list);
 
 	}
