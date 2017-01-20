@@ -54,10 +54,11 @@ public class LinkedList {
 
 		LinkedList list = new LinkedList();
 
-		LinkedListNode node = this.getHead();
+		LinkedListNode tmp = this.getHead();
 
-		while (node != null) {
-			list.add(node.data);
+		while (tmp != null) {
+			list.add(tmp.data);
+			tmp = tmp.next;
 		}
 
 		return list;
