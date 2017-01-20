@@ -50,6 +50,20 @@ public class LinkedList {
 
 	}
 
+	public LinkedList copy() {
+
+		LinkedList list = new LinkedList();
+
+		LinkedListNode node = this.getHead();
+
+		while (node != null) {
+			list.add(node.data);
+		}
+
+		return list;
+
+	}
+
 	@Override
 	public String toString() {
 
